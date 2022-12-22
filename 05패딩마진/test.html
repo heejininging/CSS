@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0; margin: 0; list-style: none;
+        }
+
+        .menu1 {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        .menu2 li {
+            display: inline;
+        }
+        .menu2 li a {
+            display: inline-block;
+            text-decoration: none;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            color: white;
+            font-size: 20px;
+            font-family: "맑은고딕";
+            cursor: pointer;
+        }
+        .menu2 li a:hover {
+            display: inline-block;
+            border-bottom: 5px solid white;
+            
+        }
+
+        img {
+            /* max-width는 이미지의 크기 최솟값 설정 */
+            height: auto; max-width: 100%;
+            
+        }
+
+        .text1 {
+            padding: 50px;
+        }
+
+        .text2 {
+            height: 100px;
+            border: 2px solid black;
+            padding: 40px 20px;
+            overflow: scroll;
+        }
+
+        .circle {
+            display: inline-block;
+            padding: 30px;
+            margin: 20px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: palevioletred;
+            font-size: 5px;
+            text-align: center;
+            line-height: 100px;
+
+            border: 6px solid #fff;
+            box-shadow: 0 0 16px rgb(221, 221, 221);
+        }
+    </style>
+</head>
+<body>
+    <header class="menu1">
+        <ul class="menu2">
+            <LI><a href="#">메뉴</a></LI>
+            <LI><a href="#">메뉴</a></LI>
+            <LI><a href="#">메뉴</a></LI>
+            <LI><a href="#">메뉴</a></LI>
+        </ul>
+    </header>
+    
+    <article>
+        <img src="img/1.jpg" alt="배너1">
+    </article>
+
+    <section class="text1">
+        <h3>오늘의 발견</h3>
+        <div class="text2">
+            컨텐츠 내용...<br>
+            컨텐츠 내용...<br>
+            컨텐츠 내용...<br>
+            컨텐츠 내용...<br>
+            컨텐츠 내용...<br>
+            컨텐츠 내용...<br>
+            컨텐츠 내용...<br>
+            컨텐츠 내용...<br>
+            컨텐츠 내용...<br>
+            컨텐츠 내용...<br>
+        </div>
+    </section>
+
+    <div class="circle">컨텐츠</div>
+    <div class="circle">컨텐츠</div>
+    <div class="circle">컨텐츠</div>
+</body>
+</html>

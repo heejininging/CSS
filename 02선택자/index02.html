@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        /* *{color: red;}  디자인 시작 전에 전역으로 적용할 속성 margin and padding에 적용 */
+        b { color: blue;}
+        #a1 { color: aqua;} 
+        .b1 { color: coral;}
+
+        .box p {color: yellow;}
+        .box > p {color: green;}
+        .box2 li,
+        .box2 p {color: grey;}
+
+        .forms input[type=text]{background-color: forestgreen;}
+    </style>
+</head>
+<body>
+    <b>선택자</b>
+    <p>선택자</p>
+
+    <p id="a1">아이디선택자 #</p>
+
+    <p class="b1">클래스선택자 .</p>
+    
+    <p class="b1">클래스선택자 .</p>
+
+    <DIV class="box">
+        <P>하위선택자 꺽쇠</P>
+        <P>하위선택자 꺽쇠</P>
+        
+        <FORm>
+            <P>하위선택자 공백</P>
+
+        </FORm>
+    </DIV>
+
+    <div class="box2">
+        <ul>
+            <li>목록</li>
+            <li>목록</li>
+            <li>목록</li>
+        </ul>
+
+        <div>
+            <p>내용...</p>
+        </div>
+
+        <form class="forms">
+            <input type="text">
+            <input type="submit">
+        </form>
+    </div>
+
+</body>
+</html>
