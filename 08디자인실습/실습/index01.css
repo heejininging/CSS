@@ -1,0 +1,93 @@
+* { padding: 0; margin: 0; list-style: none; box-sizing: border-box;}
+body { background-image: url(images/bg.png); overflow: scroll;}
+
+/* 로고화면 css */
+
+.mainlogo {
+    margin: 20px;
+    text-align: center;
+    background-color: white;
+   
+}
+
+
+
+/* 메뉴화면 css */
+
+.menu {
+    background-color: black;
+    text-align: center;
+    /* position: sticky;
+    top: 0px; */
+}
+.menu li {
+    display: inline-block;
+    padding: 20px;
+    
+}
+.menu li a {
+    text-decoration: none;
+    color: white;
+    margin: 15px;
+    
+}
+.menu li a:hover{
+    cursor: pointer;
+    border-bottom: 3px solid #777;
+}
+
+
+/* 상품화면 css */
+
+.product { background-color: white;}
+.product ul {
+    overflow: hidden;
+    margin: 0 auto;
+}
+.product ul li {
+    text-align: center;
+    display: inline-block;
+    width: 24%;
+    margin: 40px 0px;
+}
+
+/* 메인 게시물 화면 */
+
+.ad .mainboard {
+    position: relative;
+    width: 700px;
+    margin: 0 auto;
+    /* padding: 20px; */
+}
+
+.ad .left {
+    position: absolute;
+    top: 20px;
+    left: -220px;
+}
+
+.ad .right {
+    position: absolute;
+    top: 20px;
+    right: -220px;
+}
+
+
+/* 사이드고정바 만들기 */
+.sidebar {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border: none;
+    background-color: #777;
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-align: center;
+}
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+

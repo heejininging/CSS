@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 1px solid;
+            width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+
+            position: relative;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            
+        }
+
+        .content {
+            padding-left: 110px;
+            overflow: hidden;
+        }
+        .content textarea {
+            width: 100%;
+            height: 150px;
+            overflow: scroll;
+            box-sizing: border-box;
+            /* 텍스트상자 크기조절 불가능하게 설정하기 */
+            resize: both;
+            font-size: 15px;
+        }
+        .content .left {float: left; margin-top: 10px;}
+        .content .left input {display: block;}
+
+        .content .right {float: right; margin-top: 10px;}
+
+     
+        
+    </style>
+</head>
+<body>
+    <div class="box"><!--margin: 0 auto-->
+        <div class="logo"><!--포지션-->
+            <img src="img/bgimg.png" width="80px" alt="이미지는 포지션으로 잡아준다.">
+        </div>
+
+        <div class="content"><!--패딩 left-->
+            <textarea>이 곳은 텍스트를 작성하는 영역입니다.</textarea>
+                <div class="left"><!--float left-->
+                    <input type="text">
+                    <input type="text">
+                </div>
+                    <button type="button" class="right">등록하기</button><!--float right-->
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="logo">
+            <img src="img/bgimg.png" width="50px" alt="작은로고">
+        </div>
+        <div class="content">
+            
+            <div class="left">
+                <p style="margin: 0;"><strong>제목</strong></p>
+                <p style="margin: 0;"><small>내용</small></p>
+            </div>
+
+                <button type="button" class="right">삭제</button>
+                <button type="button" class="right">수정</button>
+        </div>
+    </div>
+</body>
+</html>

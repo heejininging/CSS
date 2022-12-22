@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{padding: 0; margin: 0; box-sizing: border-box;}
+
+        .box {
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            width: 600px;
+            height: 500px;
+            padding: 10px;
+
+            border: 1px solid black;
+        }
+
+        .box .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .box .content {
+            overflow: hidden;
+            padding-left: 110px;
+        }
+        .box .content textarea{
+            /* padding: 10px;
+            margin: 10px 10px 30px 120px; */
+            width: 100%;
+        }
+
+        .content .left {
+
+            float: left;
+        }
+        .content .right {
+            float: right;
+            margin-right: 100px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="box"><!--margin: 0 auto-->
+        <div class="logo"><!--포지션-->
+            <img src="img/bgimg.png" alt="이미지는 포지션으로 잡아준다.">
+        </div>
+
+        <div class="content"><!--패딩 left-->
+            <textarea>이 곳은 텍스트를 작성하는 영역입니다.</textarea>
+                <div class="left"><!--float left-->
+                    <input type="text">
+                    <input type="text">
+                </div>
+                    <button type="button" class="right">등록하기</button><!--float right-->
+        </div>
+    </div>
+</body>
+</html>
