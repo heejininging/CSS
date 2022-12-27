@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 부모클래스는 바디영역에 대한 %를 지정한다. */
+        .box {width: 100%; overflow: hidden;}
+        .box .inner { border: 1px solid black; box-sizing: border-box;}
+
+        /* 최대넓이를 지정하고 그 이하로 가면 media작동하게끔 */
+        @media (max-width:1299px) and (min-width:768px) {
+            .box .inner {float: left; width: 50%;}
+        }
+
+        /* 최소넓이를 지정하고 그 이상으로 가면 media작동하게끔 : 1300px이상에서 동작하는 디자인  */
+        @media (min-width : 1300px) {
+           .box .inner {float: left; width: 33.3333%;} 
+        }
+
+        @media (max-width : 767px){
+            .box.inner{float: left; width: 100%;}
+        }
+    </style>
+</head>
+<body>
+    
+    <h3>반응형디자인 media</h3>
+
+    <div class="box">
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+    </div>
+
+</body>
+</html>

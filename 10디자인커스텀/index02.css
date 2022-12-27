@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+
+* {padding: 0; margin: 0 auto; list-style: none; box-sizing: border-box;font-family: 'Noto Sans KR', sans-serif;}
+a {text-decoration: none;}
+img {width: 100%; height: auto;}
+
+
+.container .prod_info .prod_title { font-size: 23px;}
+.container .prod_info .prod_price { font-size: 30px; font-weight: bold; border-bottom: 1px solid #777; border-top: 1px solid #777; padding: 10px;}
+.container .prod_info .prod_delivery { color: #999; font-size: 15px;}
+
+.container .prod_info p { margin: 0 0 10px; display: block;}
+
+
+.container .total_price { overflow: hidden;}
+.total_price .left { float: left ; font-size: 18px; height: 29px; line-height: 29px;}
+.total_price .right { float: right ; font-size: 30px; height: 29px;}
+
+.container .order_button {overflow: hidden;} 
+.order_button .left { width: 50%; height: 70px; float: left;  font-size: 20px; background-color: white;  border: 1px solid #999;  padding: 6px 12px;}
+.order_button .right { width: 50%; height: 70px; float: right;  font-size: 20px; background-color: #2e6da4; color: white;  border: 1px solid #337ab7; border-radius: 0;  padding: 6px 12px;} 
+.order_button .btn:hover {
+    opacity: 0.7;
+}
+.order_button btn:focus {
+    border: 2px solid black;
+}
+
+
+
+/* 댓글 폼 */
+
+.reply {border: 1px solid #777; position: relative; margin-top: 100px;}
+.reply .reply_img {position: absolute; top: 15px; left: 15px;}
+

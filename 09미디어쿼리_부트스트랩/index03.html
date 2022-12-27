@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--css링크-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--제이쿼리 링크-->
+    <script src="jquery/jquery-3.6.3.min.js"></script>
+
+    <!--부트스트랩 테마가 필요하면 이쯤 추가..-->
+
+    <!--js 링크-->
+    <script src="js/bootstrap.min.js"></script>
+
+    <style>
+        .mygrid {
+            border: 1px solid #777;
+            margin: 0 auto;
+            float: none;
+            /*부트스트랩의 col-클래스가 float의 영향이 있어서
+              1개의 박스를 가운데로 보낼때만 float을 해제하고
+              margin:0 auto;*/
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h3>그리드 커스터마이징</h3>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-6 col-xs-12 mygrid">
+                컨텐츠 내용...
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
